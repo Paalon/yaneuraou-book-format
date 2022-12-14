@@ -1,0 +1,102 @@
+# やねうらおう定跡フォーマット2016 / YaneuraOu Book Format 2016
+
+* ファイルの文字コードは UTF-8 が推奨される。
+* コメントは `//` のあとに書くことが推奨される。
+* 応手が必要ない場合は `none` と書く。
+
+.形式
+[source, txt]
+----
+sfen sfen文字列
+この局面での指し手1 相手の応手1 この指し手を指したときの評価値 そのときの探索深さ その指し手が選択された回数
+この局面での指し手2 相手の応手2 この指し手を指したときの評価値 そのときの探索深さ その指し手が選択された回数
+…
+sfen xxxx..
+----
+
+.例１
+[source, txt]
+----
+#YANEURAOU-DB2016 1.00
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1
+7g7f 3c3d 0 32 2
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/2P6/PP1PPPPPP/1B5R1/LNSGKGSNL w - 2
+3c3d 2g2f 0 32 1
+----
+
+.例２
+[source, txt]
+----
+#YANEURAOU-DB2016 1.00
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1
+7g7f none 0 32 2
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/2P6/PP1PPPPPP/1B5R1/LNSGKGSNL w - 2
+3c3d 2g2f 0 32 1
+----
+
+.例３
+[source, txt]
+----
+#YANEURAOU-DB2016 1.00
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1
+7g7f 8c8d 0 32
+2g2f 3c3d 0 32
+2h6h 8b3b 0 32
+3i3h 8c8d 0 32
+7i6h 3c3d 0 32
+2h7h 8b3b 0 32
+5i6h 8c8d 0 32
+3g3f 8c8d 0 32
+6i7h 3c3d 0 32
+6g6f 3c3d 0 32
+5g5f 3c3d 0 32
+1g1f 3c3d 0 32
+3i4h 8c8d 0 32
+4i5h 8c8d 0 32
+9g9f 3c3d 0 32
+6i5h 3c3d 0 32
+4g4f 4c4d 0 32
+----
+
+[source, txt]
+----
+#YANEURAOU-DB2016 1.00
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1
+2g2f 8c8d 0 0 1
+sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/7P1/PPPPPPP1P/1B5R1/LNSGKGSNL w - 2
+8c8d 2f2e 0 0 1
+3c3d 7g7f 0 0 1
+4a3b 2f2e 0 0 1
+7a6b 2f2e 0 0 1
+5c5d 2f2e 0 0 1
+8b5b 2f2e 0 0 1
+7a7b 2f2e 0 0 1
+4a4b 2f2e 0 0 1
+1c1d 2f2e 0 0 1
+3a4b 2f2e 0 0 1
+5a6b 2f2e 0 0 1
+8b3b 2f2e 0 0 1
+5a5b 2f2e 0 0 1
+9c9d 2f2e 0 0 1
+3a3b 2f2e 0 0 1
+4c4d 2f2e 0 0 1
+8b4b 2f2e 0 0 1
+9a9b 2f2e 0 0 1
+6a5b 2f2e 0 0 1
+7c7d 2f2e 0 0 1
+8b7b 2f2e 0 0 1
+6c6d 2f2e 0 0 1
+8b6b 2f2e 0 0 1
+4a5b 2f2e 0 0 1
+5a4b 2f2e 0 0 1
+6a7b 2f2e 0 0 1
+2c2d 2f2e 0 0 1
+6a6b 2f2e 0 0 1
+8b9b 2f2e 0 0 1
+1a1b 2f2e 0 0 1
+sfen lnsgkgsnl/1r5b1/p1ppppppp/1p7/9/7P1/PPPPPPP1P/1B5R1/LNSGKGSNL b - 3
+2f2e 8d8e 0 0 1
+----
+
+この定跡フォーマットは yaneurao によって MIT ライセンス下のもと公開され、Koki Fushimi の解釈下のもと整理しなおしたものである。
+このプロジェクトは MIT ライセンス下におかれる。詳しくは LICENSE を見よ。
