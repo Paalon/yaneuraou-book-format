@@ -58,6 +58,7 @@ sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1
 4g4f 4c4d 0 32
 ----
 
+.例４
 [source, txt]
 ----
 #YANEURAOU-DB2016 1.00
@@ -98,5 +99,5 @@ sfen lnsgkgsnl/1r5b1/p1ppppppp/1p7/9/7P1/PPPPPPP1P/1B5R1/LNSGKGSNL b - 3
 2f2e 8d8e 0 0 1
 ----
 
-この定跡フォーマットは yaneurao によって MIT ライセンス下のもと公開され、Koki Fushimi の解釈下のもと整理しなおしたものである。
-このプロジェクトは MIT ライセンス下におかれる。詳しくは LICENSE を見よ。
+この定跡フォーマットは yaneurao によって MIT ライセンス下のもと公開され、Koki Fushimi の解釈の下、整理し直したものである。
+このプロジェクトは MIT ライセンス下に置かれる。詳しくは https://github.com/Paalon/yaneuraou-book-format/blob/main/LICENSE[LICENSE] を見よ。
